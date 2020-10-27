@@ -1,0 +1,41 @@
+#header1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 65px;
+	font-weight: normal;
+	color: #fff;
+	margin-top: 50px;
+	font-weight: bold;
+}
+
+#scroll {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: #fff;
+	margin-top: 10px;
+}
+
+#end {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 350px;
+}
+
+#HjelmPatrik {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.7;
+	margin: 10px;
+}
+
+#HjelmPatrik:hover {
+	opacity: 0.9;
+}
+
+body {
+	background-color: #fa3232;
+}
