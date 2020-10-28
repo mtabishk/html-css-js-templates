@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+<form action='http://192.168.1.15/cgi-bin/sr_backend.py'>
     <!-- Input area -->
     <label for="Speech Recognition">Speech Recognition</label>
-    <input type="text" name="" id="speechToText" placeholder="Speak Something" onclick="record()">
+    <input type="text" name="q" id="speechToText" placeholder="Speak Something" onclick="record()">
 
     <!-- Below is the script for voice recognition and conversion to text-->
     <script>
