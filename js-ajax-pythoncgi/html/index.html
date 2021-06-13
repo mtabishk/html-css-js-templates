@@ -1,0 +1,23 @@
+<script>
+	function clickme() {
+		var data = document.getElementById('inp1').value;
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", "http://ec2-65-0-5-35.ap-south-1.compute.amazonaws.com/cgi-bin/mycgicode.py?data="+data, true);
+		xhr.send();
+		xhr.onload = function () {
+			var res = xhr.responseText;
+			document.getElementById('d1').innerHTML = res;
+		}
+	}
+</script>
+
+
+<body bgcolor='pink'>
+<pre>
+[root@localhost ~] # <input id='inp1' />
+<div id='d1'> </div>
+<button onclick="clickme();"> Click here</button>
+<br>
+<div id='d2' onclick='alert("This is an Alert")'> Get Alert </div>
+</pre>
+</body>
