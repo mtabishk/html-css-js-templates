@@ -1,17 +1,51 @@
 <style>
     div#d2 {
         border: 5px solid red;
-        height: 100px;
-        width: 100px;
-        left: 500px;
-        top: 200px;
+        height: 150;
+        width: 150;
+        position: absolute;
+        left: 0px;
+        /* top: 200px; */
+        bottom: 0px;
 
     }
 </style>
 
+<script>
+    function cssfun() {
+        var c = document.getElementById("d3");
+        c.style.border = "5px solid pink";
+        c.style.width = "200px";
+        c.style.height = "200px";
+
+    }
+
+    function undocssfun() {
+        var c = document.getElementById("d3");
+        c.style.border = "2px dotted red";
+        c.style.width = "200px";
+        c.style.height = "200px";
+
+    }
+
+    var i = 0;
+    function movefun() {
+        var c = document.getElementById("d2");
+        c.style.left =  i;
+        c.style.width = 150 + i;
+        c.style.height = 150 + i;
+        c.style.bottom = i;
+        i++;
+        setTimeout(movefun, 100);
+    }
+
+   
+</script>
+    
+
 
 <div id='d1'> My first Div</div>
 <br>
-<div id='d2'> My Second Div</div>
+<div id='d2' onmouseover="movefun()" > My Second Div</div>
 <br>
-<div id='d3'> My Third Div</div>
+<div id='d3' onmouseover="cssfun()" onmouseout="undocssfun()"> My Third Div</div>
