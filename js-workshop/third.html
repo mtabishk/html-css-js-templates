@@ -1,0 +1,37 @@
+<div id='d1'> This is first</div>
+<div id='d2'> This is second</div>
+
+
+<script>
+    function clickme() {
+        e = document.getElementById('d2');
+        // data = e.innerHTML;
+        // alert(data);
+        e.innerHTML = "hello, world!";
+    }
+    
+    function swapContent() {
+        e1 = document.getElementById('d1');
+        e2 = document.getElementById('d2');
+        temp = e1.innerHTML
+        e1.innerHTML = e2.innerHTML;
+        e2.innerHTML = temp;
+    }
+
+    function inpVal() {
+        inp = document.getElementById('input1');
+        data = inp.value;
+        e = document.getElementById('d3');
+        e.innerHTML = data;
+    }
+
+</script>
+
+<button onclick="swapContent()">swap</button>
+<br>
+<br>
+
+<input id="input1"> </input>
+<button onclick="inpVal()">click</button>
+
+<div id='d3'>  </div> 

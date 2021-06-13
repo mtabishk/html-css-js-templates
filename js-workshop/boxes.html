@@ -1,0 +1,29 @@
+<script>
+    function alertBox() {
+        alert("Hi it's alert box");
+    }
+
+    function confirmBox() {
+        var res = confirm("Hi it's confirm box");
+        if (res == true) {
+            // BOM (Browser Object Model)
+            document.location = "http://www.google.com";
+        }
+    }
+
+    function promptBox() {
+        var ret = prompt("Hi it's prompt box");
+        alert(ret);
+    }
+
+</script>
+
+<button onclick="alertBox()"> Alert Box</button>
+<br>
+<br>
+
+<button onclick="confirmBox()"> Confirm Box</button>
+<br>
+<br>
+
+<button onclick="promptBox()"> Prompt Box</button>

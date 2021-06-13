@@ -1,0 +1,44 @@
+<style>
+    p {
+        border: 5px solid blue;
+    }
+</style>
+
+<p>This is first line </p>
+<a href='https://www.google.com'> Click to navigate</a>
+<br>
+
+<script>
+    x=5
+    document.write("Result is ", x);
+
+    function lw() {
+        alert('Hi, Tabish');
+    }
+
+
+</script>
+
+<p onmouseover="loc()"  >This is second line </p>
+
+<script>
+    function loc() {
+        l = document.location;
+    alert(l);
+    }
+
+    function chloc() {
+        document.location = "https://www.google.com";
+    }
+    
+</script>
+
+<p onclick="chloc()">This is third line </p>
+
+
+<!-- <br>
+This is second line <br>
+<script>
+    lw();
+</script>
+This is third line  <br> -->

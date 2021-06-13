@@ -1,0 +1,30 @@
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=3GhHpvCr"></script>
+<script>
+    function typefun() {
+        var e = document.getElementById("input1");
+        var d = document.getElementById("d1");
+        d.innerHTML = e.value;
+    }
+
+    function clickme() {
+        var d = document.getElementById("d1");
+        responsiveVoice.speak(d.innerHTML);
+        document.location = "http://" + d.innerHTML;
+    }
+
+    function clickonSpeak() {
+        var c = document.getElementById("input2");
+        responsiveVoice.speak(c.value);
+        
+    }
+</script>
+
+
+
+<p> Type Here...</p>
+<input id="input1" onkeyup="typefun()"> </input>
+<div id='d1' onclick="clickme()">  Your content will be displayed here... </div> 
+
+<p> Text to Speech..</p>
+<input id="input2"> </input>
+<button  onclick="clickonSpeak()">  speak </button> 

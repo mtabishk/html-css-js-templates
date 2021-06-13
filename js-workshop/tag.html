@@ -1,0 +1,24 @@
+<div id='d1'> This is first</div>
+<div id='d2'> This is second</div>
+<div id='d3'> This is third</div>
+<div id='d4'> This is fourth</div>
+
+<script>
+    function getTags() {
+        t = document.getElementsByTagName('div');
+        alert(t.length);
+    }
+
+    function getTagsContent() {
+        con = document.getElementsByTagName('div');
+        var divs = [];
+        for (var i=0 ; i< con.length; i++) {
+            divs.push(con[i].innerHTML);
+        }
+        alert(divs);
+    }
+</script>
+
+<button onclick="getTags()"> Get Tags</button>
+
+<button onclick="getTagsContent()"> Get Data</button>
